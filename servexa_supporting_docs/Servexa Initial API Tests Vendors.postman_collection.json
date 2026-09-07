@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "d43cf667-3682-4c40-b798-b08d05fdda08",
+    "name": "Servexa Initial API Tests Vendors",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52770737",
+    "_collection_link": "https://go.postman.co/collection/52770737-d43cf667-3682-4c40-b798-b08d05fdda08?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Add New Vendor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Ian's Plumbing\",\r\n    \"serviceType\":\"Plumbing\",\r\n    \"addressLine1\":\"203 Butt Crack Ln\",\r\n    \"addressLine2\":\"\",\r\n    \"addressCity\":\"Hardeeville\",\r\n    \"addressZip\":\"29927\",\r\n    \"contactFirstName\":\"Ian\",\r\n    \"contactLastName\":\"Bickford\",\r\n    \"phone\":\"978-895-9569\",\r\n    \"email\":\"ianbicktm@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendor",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendor"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Vendor",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"New Ian's Plumbing\",\r\n    \"serviceType\":\"Plumbing\",\r\n    \"addressLine1\":\"203 Butt Crack Ln\",\r\n    \"addressLine2\":\"\",\r\n    \"addressCity\":\"Hardeeville\",\r\n    \"addressZip\":\"29927\",\r\n    \"contactFirstName\":\"Ian\",\r\n    \"contactLastName\":\"Bickford\",\r\n    \"phone\":\"978-895-9569\",\r\n    \"email\":\"ianbicktm@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vendor/34",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendor",
+            "34"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Vendor By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendor/34",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendor",
+            "34"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Vendors",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/tenant",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "tenant"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Vendor",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/vendor/34",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vendor",
+            "34"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

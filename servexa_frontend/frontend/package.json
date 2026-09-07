@@ -1,0 +1,7 @@
+{
+  "name": "frontend-shim",
+  "private": true,
+  "scripts": {
+    "start": "cd /app && node node_modules/vite/bin/vite.js"
+  }
+}
